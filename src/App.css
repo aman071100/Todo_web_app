@@ -1,38 +1,402 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head-container{
+  background-image: url("https://www.desktopbackground.org/download/1400x1050/2015/01/26/893193_astrology-wide-hd-wallpapers-download-astrology-images-free_1920x1080_h.jpg")
+  /* url("https://png.pngtree.com/thumb_back/fw800/background/20231229/pngtree-graphic-design-intricate-background-with-red-astrology-zodiac-horoscope-pattern-texture-image_13831029.png") */
+  ;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.first-child{
+  margin: 20px 0 10px 0;
+  color: #f7ff00;
+  font-family: "Poppins", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+
+}
+
+.second-child{
+  display: flex;
+  color: white;
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 49px;
+  margin: 10px 0;
+}
+
+.second-child1{
+  display: flex;
+  color: white;
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 49px;
+  margin: 10px 0 0 80px;
+}
+.words{
+  overflow: hidden;
+  height: 50px;
+}
+
+span{
+  color: #f7ff00;
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 49px;
+  margin-left: 5px;
+  display: block;
+  height: 100%;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+  0%, 10% {
+    transform: translateY(0%);
+  }
+  25%, 35% {
+    transform: translateY(-100%);
+  }
+  50%, 60% {
+    transform: translateY(-200%);
+  }
+  /* 75%, 85% {
+    transform: translateY(-300%);
+  } */
+  100% {
+    transform: translateY(0%);
+  }
+  
+}
+
+.third-child{
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text{
+  margin: 0;
+  color: #f7ff00;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.my-button{
+  background-image: linear-gradient(166deg, #D50909 47%, #880606F2 98%);
+  width: 270px;
+  margin-bottom: 25px;
+}
+
+.my-button1{
+  background-image: linear-gradient(166deg, #D50909 47%, #880606F2 98%);
+  width: 270px;
+  margin-bottom: 25px;
+  width: 700px;
+}
+
+.custom-form-class{
+  margin: 20px 0;
+}
+
+.service-container{
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231229/pngtree-graphic-design-intricate-background-with-red-astrology-zodiac-horoscope-pattern-texture-image_13831029.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 40px 0;
+}
+
+.left-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-card-section{
+  display: flex;
+}
+
+.upper-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  height: 164px;
+  width: 252px;
+  outline: 2px solid yellow;
+}
+
+.card-text-class1{
+  font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.card-text-class2{
+  font-family: "Poppins", Sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.card-image{
+  height: 50px;
+}
+
+.contact{
+  color: #FFF;
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.right-img{
+  height: 500px;
+}
+
+.problem-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0;
+}
+.problem-heading{
+  color: #970202;
+  font-family: "Poppins", Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.heading{
+  color: #ff6300;
+  font-family: "Poppins", Sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.lower-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1250px;
+}
+
+.upper-card1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  height: 182px;
+  width: 275px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+.card-text-class3{
+  font-family: "Poppins", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.card-text-class4{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card-text-class5{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: black;
+}
+
+.bgOrange{
+  background-color: #ff6300;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bgWhite{
+  color: #ff6300;
+  outline: 2px solid #ff6300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my-button2{
+  background-image: linear-gradient(166deg, #D50909 47%, #880606F2 98%);
+  width: 270px;
+  margin: 30px 0 35px 0;
+}
+
+.benifits-container{
+  background-color: #ff6300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.problem-heading1{
+  color: #FFF;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.heading1{
+  color: #f2fa02;
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.upper-card2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  height: 249px;
+  width: 372px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+.card-image1{
+  height: 88px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.card-image2{
+  height: 90px;
+}
+
+.feedback-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom{
+  width: 750px;
+  height: 500px;
+}
+
+.new-class{
+  outline: 4px solid orange;
+  box-shadow: 0 4px 12px rgb(0, 0, 0); 
+  border-radius: 15px;
+}
+
+.carouselClass{
+  margin: 0 0 50px 0;
+}
+
+.carousekText{
+  color: #ff8400;
+  font-weight: 800;
+}
+
+.imgClass{
+  width: 750px;
+  height: 500px;
+}
+
+.ReasonToChoose-container{
+  background-color: #ff6300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.faq-child{
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  border-color: #ff6300;
+  box-shadow: 4px 4px 10px 2px rgb(0 0 0 / .98);
+  width: 1078px;
+  border-radius: 10px;
+}
+
+.custom-accordian{
+  margin: 0 40px 50px 40px;
+}
+
+.accordion-button1{
+  background-color: #ff6300;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6300;
+}
+
+.footer-child{
+  color: #FFF;
+  font-family: "Poppins", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  width: 1062px;
+  margin: 25px 0 20px 0;
+}
+
+.StickForm-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6300;
+  height: 49px;
+  width: 100%; /* Make the width 100% */
+  position: fixed; /* Fixed position */
+  bottom: 5px; /* Stick to the bottom of the viewport */
+  left: 0; /* Start from the left edge of the viewport */
+  z-index: 1000; /* High z-index value to bring it to the front */
+  padding: 10px 0; /* Optional: add padding */
 }

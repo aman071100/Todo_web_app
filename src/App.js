@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Benifits from './Benifits';
+import Faq from './Faq';
+import Feedback from './Feedback';
+import Footer from './Footer';
+import Header from './Header';
+import Problems from './Problems';
+import ReasonToChoose from './ReasonToChoose';
+import Service from './Service';
+import StickForm from './StickForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Service/>
+      <Problems/>
+      <Benifits/>
+      <Feedback/>
+      <ReasonToChoose/>
+      <Faq/>
+      <Footer/>
+      <StickForm/>
     </div>
   );
 }
